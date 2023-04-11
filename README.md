@@ -17,3 +17,6 @@ Skills Demonstrated:
 6.Strong collaboration and communication skills, demonstrated through successful teamwork with development colleagues.
 
 7.Ability to manage complex project requirements and implement solutions to meet user needs.
+
+
+## This Project or chatbot extension is under continuos development wherein in further versions will include access to webpage and training on personal data using      Langchain
