@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>High Memory GPT-3.5</title>
+  <style>
+   #loading {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(123, 173, 184, 0.7);
+  z-index: 9999;
+}
+
+#loading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+
+    
+    form {
+      width: 350px;
+      margin: 0 auto;
+      
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    
+    button[type="submit"] {
+      background-color: #eda256;
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: #f47200;
+    }
+    
+    #output {
+      width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      background-color: #f2f2f2;
+      min-height: 100px;
+    }
+    
+    .chat-entry {
+      margin-bottom: 10px;
+    }
+    
+    .chat-entry .user {
+      font-weight: bold;
+      color: blue;
+    }
+    
+    .chat-entry .assistant {
+      font-weight: bold;
+      color: rgb(248, 109, 2);
+    }
+    body {
+      background-color: #ADD8E6;margin: 0 auto;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>High Memory GPT-3.5</h1>
+  <div id="output"></div>
+  <form id="chat-form">
+    <label for="input">Enter your message:</label>
+    <input type="text" id="input" name="input">
+    <button type="submit">Send</button>
+  </form>
+  <div id="loading">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/04de2e31234507.564a1d23645bf.gif" alt="Loading...">
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

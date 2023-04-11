@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "3.0",
+  "description": "This GPT 3.5 can be used with a long term memory where in it remembers all the previous conversations you had.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "geolocation",
+    "storage"
+  ]
+}
